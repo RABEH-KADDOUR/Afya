@@ -13,15 +13,9 @@ data class Post(
     val createdAt: Date,
     val updatedAt: Date,
     val expiredAt: Date
-) {
-    companion object {
-        fun PostType(postType: String) {
+)
 
-        }
-    }
+enum class PostType {
+    OFFER,
+    REQUEST
 }
-
-//enum class PostType {
-//    OFFER,
-//    REQUEST
-//}
